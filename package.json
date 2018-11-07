@@ -1,0 +1,27 @@
+{
+  "name": "bull-queue-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start pm2.config.js",
+    "stop": "pm2 stop pm2.config.js",
+    "start-producer": "ts-node producer.ts",
+    "start-consumer": "ts-node consumer.ts",
+    "start-monitor": "node monitor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shumail Mohyuddin",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.4.8",
+    "bull-arena": "^2.5.0",
+    "express": "^4.16.4",
+    "pm2": "^3.2.2",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.4.0",
+    "ts-node": "^7.0.1"
+  }
+}
